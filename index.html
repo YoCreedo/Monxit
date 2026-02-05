@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monxit OS</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/desktop.css">
+  <link rel="stylesheet" href="css/windows.css">
+  <link rel="stylesheet" href="css/explorer.css">
+  <link rel="stylesheet" href="css/contextmenu.css">
+  <link rel="stylesheet" href="css/gameEngine.css">
+  <link rel="stylesheet" href="css/browser.css">
+</head>
+<body>
+
+<div id="login-screen" class="login-screen">
+  <div class="login-box">
+    <h1 class="login-title">Monxit OS</h1>
+    <p class="login-subtitle">Sign in to continue</p>
+    <form id="login-form" class="login-form">
+      <input type="text" id="login-username" class="login-input" placeholder="Username" autocomplete="username" required>
+      <div class="login-buttons">
+        <button type="submit" class="login-btn login-btn-primary">Sign in</button>
+        <button type="button" class="login-btn login-btn-secondary" id="login-create-user">Create new user</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="desktop" class="desktop-hidden"></div>
+
+<header id="taskbar" class="taskbar">
+  <div class="taskbar-start">
+    <button type="button" class="taskbar-start-btn" aria-label="Start" id="taskbar-start-btn">
+      <img src="assets/logo.png" alt="Monxit OS" class="taskbar-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <svg class="taskbar-logo-svg" width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 6h8v8H6V6zm12 0h8v8h-8V6zM6 18h8v8H6v-8zm12 0h8v8h-8v-8z" fill="currentColor"/>
+      </svg>
+    </button>
+  </div>
+  <div class="taskbar-pinned" id="taskbar-pinned"></div>
+  <div class="taskbar-apps" id="taskbar-apps"></div>
+  <div class="taskbar-tray">
+    <span class="taskbar-clock" id="taskbar-clock">--:--</span>
+  </div>
+</header>
+<div id="start-menu" class="start-menu" hidden>
+  <button type="button" class="start-menu-item" data-action="explorer">
+    <span class="start-menu-icon">📁</span>
+    <span>File Explorer</span>
+  </button>
+  <button type="button" class="start-menu-item" data-action="gameengine">
+    <span class="start-menu-icon">🎮</span>
+    <span>Monxit Engine</span>
+  </button>
+  <button type="button" class="start-menu-item" data-action="browser">
+    <span class="start-menu-icon">🌐</span>
+    <span>Browser</span>
+  </button>
+</div>
+
+<script src="js/windowManager.js"></script>
+<script src="js/filesystem.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/fileAssociations.js"></script>
+<script src="js/taskbar.js"></script>
+<script src="js/explorer.js"></script>
+<script src="js/desktop.js"></script>
+<script src="js/gameEngine.js"></script>
+<script src="js/browser.js"></script>
+<script src="js/contextmenu.js"></script>
+<script src="js/boot.js"></script>
+
+</body>
+</html>
