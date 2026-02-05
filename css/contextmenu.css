@@ -1,0 +1,143 @@
+.context-menu {
+  position: absolute;
+  min-width: 180px;
+  background: #2b2d30;
+  border: 1px solid #3d3f42;
+  border-radius: 6px;
+  padding: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+}
+
+.context-menu-item {
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #e4e4e7;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.context-menu-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.context-menu-sep {
+  height: 1px;
+  background: #3d3f42;
+  margin: 4px 0;
+  padding: 0;
+  cursor: default;
+}
+
+.context-menu-sep:hover {
+  background: #3d3f42;
+}
+
+/* Dialog styles */
+.dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20000;
+}
+
+.dialog {
+  background: #2b2d30;
+  border: 1px solid #3d3f42;
+  border-radius: 8px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
+  min-width: 360px;
+  max-width: 500px;
+}
+
+.dialog-title {
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #e4e4e7;
+  border-bottom: 1px solid #3d3f42;
+}
+
+.dialog-content {
+  padding: 20px;
+}
+
+.dialog-content p {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  color: #e4e4e7;
+  line-height: 1.5;
+}
+
+.dialog-content p:last-child {
+  margin-bottom: 0;
+}
+
+.dialog-hint {
+  font-size: 11px;
+  color: #a1a1aa;
+  margin-top: 8px;
+}
+
+.dialog-input {
+  width: 100%;
+  padding: 8px 10px;
+  background: #1a1b1e;
+  border: 1px solid #3d3f42;
+  border-radius: 4px;
+  color: #e4e4e7;
+  font-size: 13px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.dialog-input:focus {
+  outline: none;
+  border-color: #5c5f66;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 12px 20px;
+  border-top: 1px solid #3d3f42;
+}
+
+.dialog-btn {
+  padding: 6px 16px;
+  border: none;
+  background: transparent;
+  color: #e4e4e7;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.dialog-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dialog-btn-ok {
+  background: #3d3f42;
+}
+
+.dialog-btn-ok:hover {
+  background: #4d4f52;
+}
+
+.dialog-btn-danger {
+  background: #e81123;
+  color: #fff;
+}
+
+.dialog-btn-danger:hover {
+  background: #f0283a;
+}

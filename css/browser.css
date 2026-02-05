@@ -1,0 +1,91 @@
+.browser-window .content {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.browser-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.browser-toolbar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: #2b2d30;
+  border-bottom: 1px solid #3d3f42;
+}
+
+.browser-btn {
+  width: 32px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: rgba(255, 255, 255, 0.06);
+  color: #e4e4e7;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.browser-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.browser-address-form {
+  flex: 1;
+  display: flex;
+  gap: 6px;
+  min-width: 0;
+}
+
+.browser-address-input {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 10px;
+  background: #1a1b1e;
+  border: 1px solid #3d3f42;
+  border-radius: 4px;
+  color: #e4e4e7;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.browser-address-input:focus {
+  outline: none;
+  border-color: #5c5f66;
+}
+
+.browser-go-btn {
+  padding: 6px 14px;
+  background: #5c5f66;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.browser-go-btn:hover {
+  background: #6d7078;
+}
+
+.browser-frame {
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  border: none;
+  background: #fff;
+}

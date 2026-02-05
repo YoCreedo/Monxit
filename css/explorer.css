@@ -1,0 +1,82 @@
+.explorer-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: #2b2d30;
+  border-bottom: 1px solid #3d3f42;
+  margin: -12px -12px 12px -12px;
+}
+
+.explorer-btn {
+  width: 32px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #e4e4e7;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+  flex-shrink: 0;
+}
+
+.explorer-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.explorer-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.explorer-up {
+  font-weight: 600;
+}
+
+.explorer-address {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 10px;
+  background: #1a1b1e;
+  border: 1px solid #3d3f42;
+  border-radius: 4px;
+  color: #e4e4e7;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.explorer-address:focus {
+  outline: none;
+  border-color: #5c5f66;
+}
+
+.explorer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.explorer-item {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #e4e4e7;
+}
+
+.explorer-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.explorer-item .icon {
+  font-size: 18px;
+  opacity: 0.9;
+}

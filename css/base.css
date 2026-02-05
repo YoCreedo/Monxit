@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #1a1b1e;
+  overflow: hidden;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #e4e4e7;
+  font-size: 13px;
+}
+
+/* Subtle desktop wallpaper – single dark gradient, no neon */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(165deg, #25262b 0%, #1a1b1e 40%, #16171a 100%);
+  z-index: -1;
+}
+
+.desktop-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Login / boot screen */
+.login-screen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(165deg, #25262b 0%, #1a1b1e 50%, #16171a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.login-screen.hidden {
+  display: none;
+}
+
+.login-box {
+  background: #2b2d30;
+  border: 1px solid #3d3f42;
+  border-radius: 12px;
+  padding: 40px;
+  min-width: 320px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 4px;
+  color: #e4e4e7;
+}
+
+.login-subtitle {
+  font-size: 13px;
+  color: #a1a1aa;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px 14px;
+  background: #1a1b1e;
+  border: 1px solid #3d3f42;
+  border-radius: 6px;
+  color: #e4e4e7;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #5c5f66;
+}
+
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.login-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.login-btn-primary {
+  background: #5c5f66;
+  color: #fff;
+}
+
+.login-btn-primary:hover {
+  background: #6d7078;
+}
+
+.login-btn-secondary {
+  background: transparent;
+  color: #a1a1aa;
+}
+
+.login-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #e4e4e7;
+}
